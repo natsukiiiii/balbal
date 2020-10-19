@@ -1,0 +1,5 @@
+User-agent: *
+User-agent: *
+Allow: /
+Allow: /sitemap.html
+Sitemap: https://bal-bal.com/sitemap.xml

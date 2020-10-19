@@ -1,0 +1,1563 @@
+/***************************************************************************************************
+　global
+****************************************************************************************************/
+
+/* search
+===================================================================================================*/
+
+.search .searchWrap.food{
+	position: relative;
+}
+.search .food .searchArea{
+	width: 890px;
+	padding: 30px 0 30px 28px;
+	display: flex;
+}
+.search .food .searchArea .conditions{
+	width: 382px;
+	margin-right: 20px;
+}
+.search .food .searchArea ul{
+	max-width: 382px;
+	background-color: transparent;
+	margin-right: 20px;
+}
+.search .food .searchArea ul li{
+	width: calc(187 / 382 * 100%);
+	background-color: #fff;
+	border-right: none;
+}
+.search .food .searchArea ul li.one{
+	border-radius: 8px 0 0 8px;
+	width: 183px;
+}
+.search .food .searchArea ul li.two{
+	border-radius: 0 8px 8px 0;
+}
+.search .food .searchArea .searchTxt .keyword{
+	width: 380px;
+}
+.search .food .searchCont .aco{
+	position: absolute;
+    border: 2px solid #37414f;
+    border-radius: 20px;
+    width: 820px;
+    left: 125px;
+	top: 100px;
+    right: auto;
+	background-color: #fff;
+}
+.search .food .searchCont .aco{
+	display: none;
+}
+.search .food .searchCont ul{
+	padding: 25px 35px;
+}
+.search .food .searchCont .involved{
+	overflow: hidden;
+}
+.search .food .searchCont .involved ul{
+	overflow-y: scroll;
+    height: 326px;
+	padding-top: 15px;
+}
+.search .food .searchCont .involved ul li{
+	border-bottom: 1px solid #b3b3b3;
+}
+.search .food .searchCont .involved ul li a{
+	padding: 15px 0;
+	display: block;
+}
+.search .food .searchCont .involved ul li:first-child a{
+	padding-top: 10px;
+}
+.search .food .searchCont .involved .invosearch{
+	padding: 20px 38px 0;
+	box-sizing: border-box;
+    position: relative;
+    display: block;
+}
+.search .food .searchCont .involved .invosearch input[type="text"]{
+	border: 1px solid #b3b3b3;
+    position: relative;
+	width: 100%;
+    height: 36px;
+}
+.search .food .searchCont .involved .invosearch input[type="submit"] {
+    cursor: pointer;
+    background-image: url(../img/top/search_icon_sp.png);
+	background-size: cover;
+    border: none;
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    right: 50px;
+    margin: auto;
+}
+.search .food .searchCont .function ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.search .food .searchCont .function ul::before{
+	content:"";
+    display:block;
+    width: 88px;
+    height:0;
+	order:1;
+}
+.search .food .searchCont .function ul::after{
+	content:"";
+    display:block;
+    width: 88px;
+    height:0;
+}
+.search .food .searchCont .function ul li{
+	display: flex;
+	align-items: center;
+}
+.search .food .searchCont .function ul li a{
+	width: 88px;
+	display: block;
+	position: relative;
+	padding-right: 20px;
+}
+.search .food .searchCont .function ul li a:hover{
+	text-decoration: underline;
+}
+.search .food .searchCont .function ul li a::after{
+	content: '';
+    width: 6px;
+    height: 6px;
+    border: 0px;
+    /*border-top: solid 2px #1799cc;
+    border-right: solid 2px #1799cc;
+    transform: rotate(45deg);*/
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -4px;
+}
+
+.search .food .searchCont .modal .chubuBlock {
+	padding: 0 137px;
+}
+.search .food .searchCont .modal.one .chubuBlock li {
+	width: 100%;
+}
+.search .food .searchCont .modal.two .chubuBlock li {
+	width: 88px;
+}
+
+.lead {
+	margin: 0 auto 30px;
+	font-size: 19px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* aside
+===================================================================================================*/
+
+.sidebar aside {
+	width: 300px;
+}
+.sidebar aside .categoryList {
+	margin: 0 0 85px;
+	border: 1px solid #37414f;
+}
+.sidebar aside .categoryList .categoryTitle {
+	background-color: #37414f;
+	color: #fff;
+	font-weight: bold;
+	padding: 9px 24px;
+}
+.sidebar aside .categoryList ul {
+	padding: 5px 17px;
+}
+.sidebar aside .categoryList ul li:not(:last-child) {
+	border-bottom: 1px solid #37414f;
+}
+.sidebar aside .categoryList ul li a {
+	display: block;
+	color: #37414f;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 5px 10px 30px;
+	position: relative;
+}
+.sidebar aside .categoryList ul li a:before {
+	content: '';
+	background: linear-gradient(to right, rgb(242,112,156) 0%,rgb(255,148,114) 100%);
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 11px;
+	left: 5px;
+}
+.sidebar aside .categoryList ul li a:after {
+	content: '';
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: rotate(45deg);
+	width: 3px;
+	height: 3px;
+	position: absolute;
+	top: 15px;
+	left: 8px;
+}
+.sidebar aside .categoryList ul li a:hover {
+	opacity: 0.7;
+}
+.sidebar aside .functionalFoodList {
+	margin: 0 0 75px;
+}
+.sidebar aside .functionalFoodList .title {
+	margin: 0 0 30px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.sidebar aside .functionalFoodList ul li:nth-child(n + 2) {
+	margin: 25px 0 ;
+}
+.sidebar aside .functionalFoodList ul li a {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 58px;
+	padding: 10px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.3;
+	text-align: center;
+	border-radius: 6px;
+	background: linear-gradient(to right, #f2709c 0%,#ff9472 100%);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar aside .functionalFoodList ul li a:after {
+	content: '';
+	border-top: 4px solid #fff;
+	border-right: 4px solid #fff;
+	transform: rotate(45deg);
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: calc( ( 100% - 10px ) / 2);
+	right: 18px;
+}
+.sidebar aside .functionalFoodList ul li a:hover {
+	opacity: 0.7;
+}
+.sidebar aside .sellerList {
+	margin: 0 0 75px;
+}
+.sidebar aside .sellerList .title {
+	margin: 0 0 30px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.sidebar aside .sellerList ul li:nth-child(n + 2) {
+	margin: 25px 0 ;
+}
+.sidebar aside .sellerList ul li a {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 58px;
+	padding: 10px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.3;
+	text-align: center;
+	border-radius: 6px;
+	background: linear-gradient(to right, rgb(0,198,255) 0%,rgb(0,114,255) 100%);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar aside .sellerList ul li a:after {
+	content: '';
+	border-top: 4px solid #fff;
+	border-right: 4px solid #fff;
+	transform: rotate(45deg);
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: calc( ( 100% - 10px ) / 2);
+	right: 18px;
+}
+.sidebar aside .sellerList ul li a:hover {
+	opacity: 0.7;
+}
+
+.sidebar aside .mail {
+	display: flex;
+	justify-content: flex-end;
+	width: 290px;
+	margin: 0 5px;
+	border-radius: 5px;
+	background: #fff;
+}
+.sidebar aside .mail a {
+	overflow: hidden;
+	display: block;
+	width: 290px;
+	padding: 26px 20px;
+	background: #ff8882;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar aside .mail a:hover {
+	opacity: 0.7;
+}
+.sidebar aside .mail .mailIcon {
+	width: 60px;
+	float: right;
+	margin: 0 15px 0 0;
+}
+.sidebar aside .mail .main {
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1.3;
+	margin: 6px 0 10px;
+}
+.sidebar aside .mail .sub {
+	float: left;
+	width: 180px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+.sidebar aside .mail .arrowIcon {
+	float: right;
+}
+.sidebar aside .mail .arrowIcon p {
+	position: relative;
+	display: block;
+	width: 48px;
+	height: 48px;
+	color: #fff;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.4);
+}
+.sidebar aside .mail .arrowIcon p:before {
+	display: block;
+	content: "";
+	position: absolute;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 18px;
+	left: 13px;
+	width: 11px;
+	height: 11px;
+	margin-left: 4px;
+	background: #ff8882;
+}
+.sidebar aside .mail .arrowIcon p:after {
+	display: block;
+	content: "";
+	position: absolute;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 18px;
+	left: 13px;
+	width: 11px;
+	height: 11px;
+	background: #fff;
+}
+
+
+
+
+
+/***************************************************************************************************
+　food
+****************************************************************************************************/
+
+/* header
+===================================================================================================*/
+
+#food .header {
+	background: url(/img/food/機能性一覧アイキャ.jpg) no-repeat center center / cover;
+}
+#food .breadcrumbs ul li {
+	color: #000;
+}
+#food .breadcrumbs ul li a {
+	color: #000;
+}
+#food .firstViewWrap h1 {
+	margin: 0 0 40px;
+	font-size: 28px;
+	font-weight: bold;
+}
+.sub-header-text {
+	padding: 16px 42px 30px;
+    text-align: right;
+    width: 1180px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* main
+===================================================================================================*/
+
+#food .contentsWrap {
+	padding: 45px 35px 140px;
+}
+
+.foodList {
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: wrap;
+  　margin: 45px 68px 103px 15px;
+}
+.foodList li {
+  width: calc( ( 100% - 40px ) / 4 );
+	background-color: #fff;
+	box-sizing: border-box;
+  position:  relative;
+  border: 1px solid rgb(235,2,118);
+  box-shadow: 13px 9px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.foodList li:last-child{
+/* background-color: red; */
+/* margin-right: auto; */
+/* margin-left: 1%; */
+/* margin-right: 50%; */
+/* flex-basis: auto; */
+/* justify-content: flex-start; */
+}
+
+.foodList li .hover{
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  font-size: 13px;
+}
+.foodList li .hover p{
+  color: #fff;
+  text-align: center;
+  font-size: 120%;
+  margin: 100% 0 0 0;
+  line-height: 120%;
+  padding: 0 2%;
+}
+.foodList li:hover .hover{
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.foodList li:nth-child(n+5) {
+	margin-top: 120px;
+}
+.foodList li:hover {
+  opacity:1;
+}
+.foodList li .listTitle {
+	color: #fff;
+    font-weight: bold;
+    margin: 0px 28px;
+    height: 78px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: normal;
+}
+.foodList li span {
+  background: linear-gradient(to right, rgb(235,2,118) 0%,rgb(245,151,56) 100%);
+  color: #fff;
+  padding: 2px 14px;
+  line-height: 26px;
+  margin: 4px;
+  display: inline-block;
+}
+
+.new_circle{
+  display: block;
+  width: 51px;
+  height: 60px;
+  padding: 16px 30px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 100px;
+  background: linear-gradient(to right, rgb(235,2,118) 0%,rgb(245,151,56) 100%);
+  position:  relative;
+  position:  absolute;
+  top:-36px;
+  z-index: 1;
+}
+
+.new_circle u{
+  color: #fff;
+  position:  absolute;
+  font-size: 17px;
+  font-weight: normal;
+  top: 20px;
+  left: 13px;
+ 
+}
+ .todokede_date{
+  /* border-bottom: 1px solid rgb(235,2,118); */
+  font-weight: 500;
+  color: #666;
+  text-align: center;
+  margin-top: -7%;
+  font-size: 13px;
+ }
+
+.foodList li .imgArea {
+	/* background-color: #fff; */
+	text-align: center;
+	padding: 15px;
+	min-height: 207px;
+  position: relative;
+  height: 0px;
+}
+.foodList li .imgArea img{
+    max-width: 100%;
+    max-height: 160px;
+    margin-top: 15px;
+}
+.foodList li .imgArea .date {
+	font-size: 14px;
+	text-align: right;
+	margin: 10px 15px 0 0;
+	position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: #919492;
+}
+.foodList li .txtBox {
+  padding: 0px 10px 25px;
+  background-color: #fff;
+  border-bottom: 1px solid #d8dcd2;
+  font-weight: bold;
+  color: #919492;
+  margin: -9px 25px 0px 25px;
+
+}
+.foodList li .itemName {
+	font-size: 10px;
+  font-weight: bold;
+  color: rgb(235,2,118);
+  height: 20px;
+  margin-top: 20px;
+}
+.foodList li .itemTxt {
+  font-size: 14px;
+  font-weight: bold;
+	height: 65px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 17px;
+}
+.foodList li .officeName {
+/* margin-top:-30px; */
+text-align: center;
+color: #606E84;
+font-weight: bold;   
+position: absolute;
+/* bottom: -23px; */
+left: 25px;
+margin: 15px 0px -13px 0px;
+text-overflow: ellipsis;
+overflow: hidden;
+-webkit-line-clamp: 1;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+height: 15px;
+}
+.foodName{
+	font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-top: 5px;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+/* end  new_top_page_List_food */
+/* /////////////////////////////////////////////////////////////////// */
+
+/* pageList
+---------------------------------------------------------------------------------------------------*/
+
+.pageList {
+	text-align: center;
+    margin-top: 50px;
+}
+.pageList li {
+	display: inline-block;
+	padding: 0 0 0 25px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.pageList li:first-child {
+	padding: 0;
+}
+.pageList li a {
+	color: #FF829C;
+	font-size: 27px;
+}
+.pageList li a:hover {
+	opacity: 0.7;
+}
+.pageList li.active {
+	color: #000;
+	font-size: 38px;
+}
+.pageList li.next {
+	margin: 0;
+	padding: 25px 0 0 10px;
+	text-align: center;
+}
+.pageList li.next a span {
+	color: #FF829C;
+	font-size: 15px;
+}
+
+
+
+
+
+/***************************************************************************************************
+　detail
+****************************************************************************************************/
+
+#detail .contents {
+	background: #f6f6f6;
+}
+#detail .contentsWrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 50px 240px;
+}
+#detail main {
+	width: 720px;
+}
+
+/* header
+===================================================================================================*/
+
+#detail .header {
+	background: url(/img/food/bg_firstView.jpg) no-repeat center center / cover;
+}
+#detail .breadcrumbs ul li {
+	color: #000;
+}
+#detail .breadcrumbs ul li a {
+	color: #000;
+}
+
+/* firstView
+---------------------------------------------------------------------------------------------------*/
+
+#detail .detailInfoPc {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 62px;
+}
+#detail .detailInfoPc .leftBox{
+	width: 720px;
+}
+#detail .detailInfoPc .rightBox {
+	position: relative;
+	width: calc(100% - 720px);
+}
+#detail .detailInfoPc .mainTitle {
+	display: flex;
+	justify-content: space-between;
+}
+#detail .detailInfoPc .mainTitle h1 {
+	font-size: 28px;
+	font-weight: bold;
+	width: 85%;
+}
+#detail .detailInfoPc .mainTitle .deliveryDate {
+	font-size: 18px;
+	font-weight: bold;
+}
+#detail .detailInfoPc .mainTitle .deliveryDate span {
+	padding: 0 2em 0 0;
+}
+#detail .detailInfoPc .productName {
+	display: flex;
+	margin: 0 0 10px;
+	padding: 0 0 5px;
+	font-size: 24px;
+	font-weight: bold;
+	border-bottom: 2px solid #f2709c;
+}
+#detail .detailInfoPc .productName span {
+	padding: 3px 5px 7px 0;
+	font-size: 11px;
+	font-weight: normal;
+}
+#detail .detailInfoPc .deliveryName {
+	display: flex;
+    margin: 3% 0 3%;
+	font-size: 24px;
+	font-weight: bold;
+	border-bottom: 2px solid #f2709c;
+	padding-bottom: 5px;
+}
+#detail .detailInfoPc .deliveryName span {
+	padding: 7px 5px 7px 0;
+	font-size: 11px;
+	font-weight: normal;
+}
+#detail .detailInfoPc .group {
+	font-size: 0;
+}
+#detail .detailInfoPc .group li {
+	display: inline-block;
+	width: 110px;
+	margin: 0 8px 8px 0;
+	padding: 7px 7px 6px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	background: linear-gradient(to right, #f2709c 0%,#ff9472 100%);
+}
+
+#detail .detailInfoPc .mail {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 5px;
+	background: #fff;
+}
+#detail .detailInfoPc .mail a {
+	overflow: hidden;
+	display: block;
+	width: 250px;
+	padding: 20px;
+	background: #ff8882;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+#detail .detailInfoPc .mail a:hover {
+	opacity: 0.7;
+}
+#detail .detailInfoPc .mail .mailIcon {
+	width: 50px;
+	float: right;
+}
+#detail .detailInfoPc .mail .main {
+	color: #fff;
+	font-size: 23px;
+	font-weight: bold;
+	line-height: 1.3;
+	margin: 6px 0 10px;
+}
+#detail .detailInfoPc .mail .sub {
+	float: left;
+	width: 160px;
+	color: #fff;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+#detail .detailInfoPc .mail .arrowIcon {
+	float: right;
+}
+#detail .detailInfoPc .mail .arrowIcon p {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.4);
+}
+#detail .detailInfoPc .mail .arrowIcon p:before {
+	display: block;
+	content: "";
+	position: absolute;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 20px;
+	left: 15px;
+	width: 9px;
+	height: 9px;
+	margin-top: -4px;
+	background: #ff8882;
+}
+#detail .detailInfoPc .mail .arrowIcon p:after {
+	display: block;
+	content: "";
+	position: absolute;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 16px;
+	left: 11px;
+	width: 9px;
+	height: 9px;
+	background: #fff;
+}
+
+/* main
+===================================================================================================*/
+
+/* mainView
+---------------------------------------------------------------------------------------------------*/
+
+#detail .mainView {
+	margin: 0 0 35px;
+}
+
+#detail .mainViewPc .mainViewBox {
+	height: 480px;
+	text-align: center;
+	margin: 0 0 35px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background: url(/img/food/bg_mainView.jpg) no-repeat center center / cover;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#detail .mainViewPc .mainViewBox .imgArea img {
+	max-width: 100%;
+    max-height: 400px;
+}
+#detail .mainViewPc .dateStatus {
+	text-align: right;
+	margin-left: auto;
+}
+#detail .mainViewPc .dateStatus tr {
+	font-size: 18px;
+	line-height: 24px;
+}
+#detail .mainViewPc .dateStatus tr .span {
+	padding: 0 6em 0 0;
+}
+#detail .mainViewPc .dateStatus tr .span {
+	padding: 0 2em 0 0;
+	font-weight: bold;
+}
+
+/* sec
+---------------------------------------------------------------------------------------------------*/
+
+#detail .sec .secWrap {
+	margin: 0 0 35px;
+	padding: 35px 40px;
+	border-radius: 4px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#detail .sec .secWrap:last-child {
+	margin: 0;
+}
+#detail .sec h2 {
+	padding: 0 0 5px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+#detail .sec .secWrap .txtDl {
+	font-size: 18px;
+	line-height: 1.5;
+}
+#detail .sec .secWrap .txtDl dt {
+	padding: 0 0 10px;
+	font-weight: bold;
+}
+
+/* sec01
+---------------------------------------------------------------------------------------------------*/
+
+#detail #sec01 .reportInfo {
+	position: relative;
+	padding: 0 20px;
+}
+#detail #sec01 .reportInfo .btnRead {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 48px;
+	color: #ff829c;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 4px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+}
+#detail #sec01 .reportInfo .btnRead:hover {
+	opacity: 0.7;
+}
+#detail #sec01 .reportInfo table {
+	display: none;
+	width: 100%;
+}
+#detail #sec01 .reportInfo table tr:nth-child(n + 2) {
+	border-top: 1px solid rgba(255, 123, 172, 0.5);
+}
+#detail #sec01 .reportInfo table tr th,
+#detail #sec01 .reportInfo table tr td {
+	padding: 24px 20px 23px;
+	font-size: 18px;
+	line-height: 1.3;
+}
+#detail #sec01 .reportInfo table tr th {
+	width: 220px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#detail #sec01 .baseInfo {
+	padding: 55px 20px;
+}
+#detail #sec01 .baseInfo .txtDl {
+	margin: 0 0 50px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid rgba(255, 123, 172, 0.5);
+}
+#detail #sec01 .baseInfo .txtDl:last-child {
+	margin: 0;
+	padding: 0;
+	border-bottom: none;
+}
+#detail #sec01 .baseInfo .txtDl dt {
+	padding: 0 20px 10px;
+}
+#detail #sec01 .baseInfo .txtDl dd {
+	padding: 0 20px 0;
+}
+#detail #sec01 .baseInfo .outsideList li:nth-child(n + 2) {
+	margin: 50px 0 0;
+}
+.sepcial-out-link {
+	margin-bottom: 40px;
+}
+.sepcial-link-subtext {
+	font-size: 14px;
+	margin: 10px 0 0;
+}
+
+#detail #sec01 .functionalFoodInfo {
+	padding: 40px;
+}
+#detail #sec01 .functionalFoodList .title {
+	margin: 0 0 50px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: center;
+}
+#detail #sec01 .functionalFoodList ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#detail #sec01 .functionalFoodList ul li {
+	width: calc( ( 100% - 40px ) / 2 );
+}
+#detail #sec01 .functionalFoodList ul li:nth-child(n + 3) {
+	margin: 30px 0 0;
+}
+#detail #sec01 .functionalFoodList ul li a {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 58px;
+	padding: 10px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.3;
+	text-align: center;
+	border-radius: 6px;
+	background: linear-gradient(to right, #f2709c 0%,#ff9472 100%);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+#detail #sec01 .functionalFoodList ul li a:after {
+	content: '';
+	border-top: 4px solid #fff;
+	border-right: 4px solid #fff;
+	transform: rotate(45deg);
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: calc( ( 100% - 10px ) / 2);
+	right: 18px;
+}
+#detail #sec01 .functionalFoodList ul li a:hover {
+	opacity: 0.7;
+}
+
+#detail #sec01 .sellerInfo {
+	padding: 40px;
+}
+#detail #sec01 .sellerList .title {
+	margin: 0 0 50px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: center;
+}
+#detail #sec01 .sellerList ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#detail #sec01 .sellerList ul li {
+	width: calc( ( 100% - 40px ) / 2 );
+}
+#detail #sec01 .sellerList ul li:nth-child(n + 3) {
+	margin: 30px 0 0;
+}
+#detail #sec01 .sellerList ul li a {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 58px;
+	padding: 10px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.3;
+	text-align: center;
+	border-radius: 6px;
+	background: linear-gradient(to right, rgb(0,198,255) 0%,rgb(0,114,255) 100%);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+#detail #sec01 .sellerList ul li a:after {
+	content: '';
+	border-top: 4px solid #fff;
+	border-right: 4px solid #fff;
+	transform: rotate(45deg);
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: calc( ( 100% - 10px ) / 2);
+	right: 18px;
+}
+#detail #sec01 .sellerList ul li a:hover {
+	opacity: 0.7;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+/***************************************************************************************************
+　global
+****************************************************************************************************/
+
+/* search
+===================================================================================================*/
+
+	.search .food .searchArea ul li.one{
+		width: 100%;
+	}	
+
+	.search .food .searchArea{
+		width: 100%;
+		padding: 0;
+	}
+	.search .food .searchArea .conditions{
+		width: 100%;;
+		margin-right: 0;
+	}
+	.search .food .searchArea ul{
+		max-width: 100%;
+		margin-right: 0;
+		padding: 0 8px;
+		background-color: #37414f;
+		border-radius: 8px;
+	}
+	.search .food .searchArea ul li{
+		width: 100%;
+		background-color: transparent;
+		border-right: none;
+	}
+	.search .food .searchArea ul li.one,
+		.search .food .searchArea ul li.two{
+		border-radius: 0;
+	}
+	.search .food .searchArea .searchTxt .keyword{
+		width: 100%;
+	}
+	.search .food .searchCont {
+		transform: none;
+		position: static;
+	}
+	.search .food .searchCont .involved{
+		width: 100%;
+		left: 0;
+		top: 130px;
+	}
+	.search .food .searchCont .involved ul{
+		height: 400px;
+		padding: 14px 16px;
+	}
+	.search .food .searchCont .involved ul li a{
+		font-size: 14px;
+	}
+	.search .food .searchCont .involved .invosearch{
+		padding: 20px 8px 0;
+	}
+	.search .food .searchCont .involved .invosearch input[type="text"]{
+		position: relative;
+		height: 36px;
+	}
+	.search .food .searchCont .involved .invosearch input[type="submit"] {
+		right: 20px;
+	}
+	.search .food .searchCont .function{
+		width: 100%;
+		left: 0;
+		top: 183px;
+	}
+	.search .food .searchCont .function ul{
+		padding: 13px 12px 10px;
+	}
+	.search .food .searchCont .function ul::before{
+		content:"";
+		display:block;
+		width: calc(300 / 684 * 100%);
+		height:0;
+		order:1;
+	}
+	.search .food .searchCont .function ul::after{
+		content:"";
+		display:block;
+		width: calc(300 / 684 * 100%);
+		height:0;
+	}
+	.search .food .searchCont .function ul li{
+		width: 48%;
+		border-top: 1px solid #a3a8ae;
+	}
+	.search .food .searchCont .function ul li:nth-child(even){
+		position: relative;
+	}
+	.search .food .searchCont .function ul li:nth-child(even)::before{
+		position: absolute;
+		content: "";
+		background-color: #a3a8ae;
+		width: 1px;
+		height: 50px;
+		left: -6px;
+	}
+	.search .food .searchCont .function ul li a{
+		width:100%;
+		padding: 15px 20px 15px 10px;
+	}
+	.search .food .searchCont .function ul li a:hover{
+		text-decoration: none;
+	}
+	.search .food .searchCont .function ul li a::after{
+		content: '';
+		width: 6px;
+		height: 6px;
+		border: 0px;
+		border-top: solid 2px #37414f;
+		border-right: solid 2px #37414f;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		margin-top: -4px;
+	}
+	.search .food .searchCont .function ul li:nth-child(n + 5){
+		margin-top: 0;
+	}
+	.search .food .searchCont .function ul li:nth-child(-n+2){
+		border-top: none;
+	}
+	.search .food .searchCont .modal .chubuBlock {
+		padding: 0;
+	}
+	.search .food .searchCont .modal.two .chubuBlock li {
+		width: 48%;
+	}
+
+/***************************************************************************************************
+　food
+****************************************************************************************************/
+
+/* header
+===================================================================================================*/
+
+	#food .header {
+		background: url(/img/food/機能性表示アイキャッ.jpg) no-repeat center center / cover;
+	}
+	.breadcrumbs {
+		margin: 0 0 30px;
+	}
+	#food .firstViewWrap h1 {
+		margin: 0 0 10px;
+		font-size: 18px;
+		text-align: center;
+		color: #fff;
+	}
+	.sub-header-text {
+		margin: 0 0 30px;
+		padding: 0;
+		text-align: center;
+		width: 100%;
+		font-size: 9px;
+		color: #fff;
+	}
+
+/* main
+===================================================================================================*/
+
+	#food .contentsWrap {
+		display: block;
+		width: 100%;
+		padding: 40px 20px 50px;
+	}
+	#food main {
+		width: 100%;
+	}
+	#food main h2 {
+		padding: 0 0 30px;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+/***************************************************************************************************
+　           food @media css
+****************************************************************************************************/
+
+@media screen and (max-width: 767px) {
+
+	/* foodList
+	---------------------------------------------------------------------------------------------------*/
+	
+	.foodList li {
+		border: 1px solid #ff829c;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+		width: 100%;
+		margin-bottom: 90px;
+	}
+	.foodList {
+		display: block;
+		margin: 85px 0px 0px 0px;
+	  }
+	  .foodList li .itemTxt {
+		  font-size: 17px;
+		  height: 66px;
+	  }
+	  .foodList li .txtBox {
+		padding: 0px 10px 12px;
+	}
+	  .foodList li .itemName {
+		font-size: 13px;
+		margin: 30px 0px 10px 0px;
+	  }
+	  .foodList li .imgArea img {
+		max-height: 222px;
+		margin-top: 20px;
+	  }
+	  .foodList li .imgArea {
+		height: 268px;
+	  }
+	  .foodList li:nth-child(n+21) {
+		display: none;
+	  }
+	  .foodList li .officeName {
+		margin: 12px 0px -15px -15px;
+		font-size: 19px;
+		height: 19px;
+	  }
+	
+	  #top #contentsWrap_bgc {
+		margin:0px 0px 0px 0px;
+	  }
+	  .todokede_date {
+		font-size: 110%;
+	  }
+	  .hover{
+		  display: none;
+	  }
+	}
+  /***************************************************************************************************
+  　END             top food @media css
+  ****************************************************************************************************/
+
+/* pageList
+---------------------------------------------------------------------------------------------------*/
+
+	.pageList {
+		padding: 14px 15px 13px 75px;
+		background: #f2f2f2;
+	}
+	.pageList li {
+		padding: 0 0 0 15px;
+	}
+	.pageList li:first-child {
+		padding: 0;
+	}
+	.pageList li a {
+		color: #0071bc;
+		font-size: 20px;
+	}
+	.pageList li.nowPage {
+		color: #0071bc;
+		font-size: 20px;
+	}
+	.pageList li.next {
+		padding: 0 0 0 15px;
+	}
+
+
+
+
+
+/***************************************************************************************************
+　detail
+****************************************************************************************************/
+
+/* header
+===================================================================================================*/
+
+	#detail .header {
+		background: url(/img/food/bg_firstView_sp.jpg) no-repeat center center / cover;
+	}
+
+/* main
+===================================================================================================*/
+
+	#detail .contentsWrap {
+		padding: 40px 10px 50px;
+	}
+	#detail main {
+		width: 100%;
+	}
+
+/* mainView
+---------------------------------------------------------------------------------------------------*/
+
+	#detail .mainView {
+		margin: 0 0 40px;
+	}
+	#detail .mainViewSp .mainViewBox {
+		padding: 25px;
+		background: #fff;
+		border-radius: 4px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+	}
+	#detail .mainViewSp .h1 {
+		margin: 0 0 20px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	#detail .mainViewSp .deliveryDate {
+		margin: 0 0 20px;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: right;
+	}
+	#detail .mainViewSp .deliveryDate span {
+		padding: 0 2em 0 0;
+	}
+	#detail .mainViewSp .productName {
+		display: flex;
+		margin: 0 0 10px;
+		padding: 0 0 5px;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: justify;
+		/* border-bottom: 2px solid #f2709c; */
+	}
+	#detail .mainViewSp .deliveryName {
+		display: flex;
+		margin: 0 0 25px;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: justify;
+		border-bottom: 2px solid #f2709c;
+		padding-bottom: 10px;
+	}
+	#detail .mainViewSp .group {
+		margin: 0 0 50px;
+		font-size: 0;
+	}
+	#detail .mainViewSp .group li {
+		display: inline-block;
+		width: auto;
+		margin: 0 8px 8px 0;
+		padding: 9px 20px 6px;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		background: linear-gradient(to right, #f2709c 0%,#ff9472 100%);
+	}
+	#detail .mainViewSp .imgArea {
+		text-align: center;
+		margin: 0 0 30px
+	}
+
+	#detail .mainViewSp .imgArea img {
+		max-width: 100%;
+		max-height: 400px;
+	}
+
+	#detail .mainViewSp .dateStatus {
+		text-align: right;
+		margin-left: auto;
+	}
+	#detail .mainViewSp .dateStatus tr {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	#detail .mainViewSp .dateStatus tr .span {
+		padding: 0 2em 0 0;
+	}
+
+/* sec
+---------------------------------------------------------------------------------------------------*/
+
+	#detail .sec .secWrap {
+		margin: 0 0 40px;
+		padding: 30px 25px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+	}
+	#detail .sec .secWrap .txtDl {
+		font-size: 17px;
+		text-align: justify;
+	}
+	#detail .sec .secWrap .txtDl dt {
+		padding: 0 0 30px;
+		text-align: center;
+	}
+
+/* sec01
+---------------------------------------------------------------------------------------------------*/
+
+	#detail #sec01 .reportInfo {
+		padding: 48px 20px 0;
+	}
+	#detail #sec01 .reportInfo table tr th {
+		display: block;
+		width: 100%;
+		padding: 15px 0 20px;
+		font-size: 17px;
+		text-align: center;
+	}
+	#detail #sec01 .reportInfo table tr td {
+		display: block;
+		padding: 0 0 20px;
+		font-size: 16px;
+		text-align: center;
+	}
+	#detail #sec01 .reportInfo table tr:nth-child(4) td {
+		text-align: left;
+	}
+
+	#detail #sec01 .baseInfo {
+		padding: 40px 25px;
+	}
+	#detail #sec01 .baseInfo .txtDl {
+		margin: 0 0 40px;
+		padding: 0 0 30px;
+	}
+	#detail #sec01 .baseInfo .txtDl dt {
+		padding: 0 0 10px;
+	}
+	#detail #sec01 .baseInfo .txtDl dd {
+		padding: 0;
+	}
+	#detail #sec01 .baseInfo .outsideList {
+		padding: 0 0 0 1em;
+	}
+	#detail #sec01 .baseInfo .outsideList li:nth-child(n + 2) {
+		margin: 45px 0 0;
+	}
+	#detail #sec01 .baseInfo .outsideList li .outsideLink {
+		color: #3187de;
+		font-weight: bold;
+		border-bottom: 1px solid #3187de;
+	}
+
+	#detail #sec01 .functionalFoodInfo {
+		padding: 20px 10px 0;
+		background: none;
+		box-shadow: none;
+	}
+	#detail #sec01 .functionalFoodList .title {
+		margin: 0 0 25px;
+		font-size: 16px;
+	}
+	#detail #sec01 .functionalFoodList ul li {
+		width: 100%;
+	}
+	#detail #sec01 .functionalFoodList ul li:nth-child(n + 2) {
+		margin: 25px 0 0;
+	}
+	#detail #sec01 .functionalFoodList ul li a {
+		padding: 10px 20px 10px 10px;
+	}
+
+	#detail #sec01 .sellerInfo {
+		padding: 20px 10px 75px;
+		background: none;
+		box-shadow: none;
+	}
+	#detail #sec01 .sellerList .title {
+		margin: 0 0 25px;
+		font-size: 16px;
+	}
+	#detail #sec01 .sellerList ul li {
+		width: 100%;
+	}
+	#detail #sec01 .sellerList ul li:nth-child(n + 2) {
+		margin: 25px 0 0;
+	}
+	#detail #sec01 .sellerList ul li a {
+		padding: 10px 20px 10px 10px;
+	}
+
+	.sepcial-link-subtext {
+		margin: 26px 0 0;
+	}
+}

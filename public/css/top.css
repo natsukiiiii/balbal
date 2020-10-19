@@ -1,0 +1,1247 @@
+@charset "UTF-8";
+/***************************************************************************************************
+　PC
+****************************************************************************************************/
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #000; }
+
+.header {
+  /*background: url(/img/top/bg_firstView.jpg) no-repeat center center/cover; */
+}
+
+.firstView {
+  position: relative;
+}
+
+.firstView .filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.firstView .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.firstView .firstViewWrap {
+  padding-bottom: 64px; }
+
+.checkbox_list {
+  display: flex;
+  flex-wrap: wrap; }
+  .checkbox_list li {
+    width: calc(100% / 3); }
+
+/* css checkbox01 */
+.checkbox01-input {
+  display: none; }
+
+.checkbox01-parts {
+  padding-left: 30px;
+  position: relative; }
+  .checkbox01-parts::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #b3beba;
+    border-radius: 3px;
+    background-color: #fff; }
+  .checkbox01-parts:hover {
+    color: #0072ff; }
+
+.checkbox01-input:checked + .checkbox01-parts::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 6px;
+  height: 11px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #0072ff;
+  border-right: 3px solid #0072ff; }
+
+.formCategory {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+  .formCategory .checkbox01-parts::before {
+    width: 20px;
+    height: 20px; }
+  .formCategory .checkbox01-input:checked + .checkbox01-parts::after {
+    top: 0px;
+    left: 6px;
+    width: 7px;
+    height: 12px; }
+
+/*--------------------
+    overlay
+--------------------*/
+.menuOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5; }
+
+.mainCont {
+  width: 880px;
+  height: 183px;
+  margin: 55px auto 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .mainCont .ttl {
+    font-size: 30px;
+    color: #37414f;
+    font-weight: bold;
+    line-height: 1.2; }
+  .mainCont .img {
+    line-height: 0; }
+  h1{
+    font-size: 40px;
+    color: #eee;
+    /* text-shadow: 1px 2px 3px #333; */
+    font-weight:bolder;
+
+  }
+  /* new_top_page_List_material
+---------------------------------------------------------------------------------------------------*/
+#top .lead h1,
+#top .lead h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+  color:#606E84;
+  height: 33px;
+  text-align: center;
+}
+
+/* #top .contents {
+	background: #f6f6f6;
+} */
+#top .breadcrumbs ul li {
+	color: #000;
+}
+#top .breadcrumbs ul li a {
+	color: #000;
+}
+
+/* contents
+===================================================================================================*/
+
+#top .contentsWrap {
+	padding: 45px 0 100px;
+}
+
+/* sec
+---------------------------------------------------------------------------------------------------*/
+
+#top .sec {
+	/* margin-left: 75px; */
+}
+
+/* lead
+---------------------------------------------------------------------------------------------------*/
+
+#top .sec .lead {
+  margin: 0 auto 0px;
+}
+
+/* materialList
+---------------------------------------------------------------------------------------------------*/
+
+#top .materialList {
+	display: flex;
+	flex-flow: wrap;
+	/*justify-content: space-between;*/
+	margin: 0 0 105px;
+}
+#top .materialList li {
+	width: calc( ( 100% - 130px ) / 3 );
+	border-radius: 4px;
+	background: #fff;
+  height: 200px;
+  margin: 45px 13px 20px 13px;
+  box-shadow: 7px 24px 15px 10px rgba(0, 0, 0, 0.1);
+}
+#top .materialList li:nth-child(n+4) {
+	/* margin: 55px 12px 0; */
+}
+#top .materialList li a {
+	display: block;
+	height: 100%;
+	background: #f1f8ff;
+}
+#top .materialList li:hover {
+	opacity: 0.7;
+}
+#top .materialList li .listTitle {
+  text-align: center;
+  padding: 2px 13px 8px 5px;
+	font-size: 82%;
+	border-radius: 18px;
+  display: block;
+  height: 19%;
+  width: 30%;
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(to right, rgb(0,198,255) 0%,rgb(0,114,255) 100%);
+  opacity: 0.7;
+  overflow: hidden;
+  line-height: 23px;
+  margin: 0 0 0 2%;
+}
+
+#top .materialList li .productInfo {
+	padding: 3% 6% 7% 3%;
+	background: #fff;
+	background-size: cover;
+	position: relative;
+	opacity: 0.99;
+  height: 90%;
+  overflow: hidden;
+}
+#top .materialList li .productInfo .filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+#top .materialList li .productInfo .background {
+	background: #b3b3b3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+/*#top .materialList li:nth-child(2) .productInfo {
+	background: url(/img/material/bg_materialInfo_1.jpg) no-repeat center center;
+	background-size: cover;
+}
+#top .materialList li:nth-child(3) .productInfo {
+	background: url(/img/material/bg_materialInfo_2.jpg) no-repeat center center;
+	background-size: cover;
+}*/
+#top .materialList li .productTitle {
+	line-height: 1.5;
+  font-weight: bold;
+  margin: -26px 0px 0px 108px;
+}
+#top .materialList li .productTitle span {
+  padding: 2% 3% 2%;
+	font-size: 73%;
+	border: 1px solid #000;
+}
+#top .materialList li .certificationMark {
+	font-size: 0;
+	text-align: right;
+	min-height: 12%;
+}
+#top .materialList li .certificationMark img {
+  width: 10%;
+  margin: -35% -13% 0 0;
+  padding: 0 5% 0 0;
+	box-sizing: content-box;
+}
+#top .materialList li .certificationMark img:last-child {
+  padding: 0;
+  width: 10%;
+  /* background: red; */
+  margin: -25% 8% 0px -13%;
+}
+#top .materialList li .productName2  {
+  font-size: 150%;
+  line-height: 1.1;
+	font-weight: bold;
+	height: 18%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 104%;
+    padding: 0 0% 0 3%;
+}
+#top .materialList li .productName1{
+	color: #666;
+  font-size: 63%;
+  font-weight: 500;
+  line-height: 0.87;
+  margin-left: 3px;
+  padding: 0 3%;
+}
+#top .materialList li .generalInfo {
+	padding: 15px 20px;
+	background: #fff;
+}
+#top .materialList li .generalName {
+	font-size: 18px;
+	font-weight: bold;
+	color:#606E85;
+	height: 54px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+#top .materialList li .generalName span {
+	color: #666;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 1.6;
+}
+
+#top .materialList li .company {
+	padding: 15px 20px;
+  height: 75px;
+  background-color: #fff;
+}
+#top .materialList li .company div {
+	height: 30px;
+	margin: 0 0 15px;
+	overflow: hidden;
+}
+#top .materialList li .descriptionTitle {
+	/*display: flex;*/
+	display: table-cell;
+	color: #19aae2;
+	line-height: 15px;
+	font-size: 13px;
+	font-weight: bold;
+	height: 26px;
+	word-break: break-all;
+	vertical-align: middle;
+}
+#top .materialList li .descriptionInfo span {
+	height: 26px;
+	margin: 0 15px 0 0;
+	padding: 3px 7px 3px;
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid #19aae2;
+	border-radius: 3px;
+	line-height: 1.5;
+	white-space: nowrap;
+	float: left;
+	background-color: #19aae2;
+}
+#top .materialList li .description {
+  padding: 4% 0% 0% 4%;
+  font-size: 83%;
+	line-height: 1.4;
+	word-break: break-all;
+  font-weight: bold;
+}
+#top .materialList li .company {
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+  color: #606E84;
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+  /* end new_top_page_List_material
+---------------------------------------------------------------------------------------------------*/
+
+
+/***************************************************************************************************
+　new_top_page_List_food
+****************************************************************************************************/
+
+/* main
+===================================================================================================*/
+
+#top .contentsWrap {
+	padding: 45px 100px 100px;
+}
+
+.contentsWrap .submit{
+  background: linear-gradient(to right, rgb(235,2,118) 0%,rgb(245,151,56) 100%);
+  margin: 0 auto;
+  padding: 8px;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.contentsWrap .submit p{
+  color: #fff;
+  font-size: 17px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.contentsWrap .submit a{
+ text-decoration: none;
+ color: #fff;
+ font-size: 17px;
+ padding: 10px 15px;
+ text-align: center;
+ font-weight: bold;
+}
+.contentsWrap .submit a:hover{
+  text-decoration: none;
+  /* border-bottom-style: rgb(0,114,255); */
+  /* border-bottom: 1px solid  rgb(0,114,255); */
+ }
+
+/* foodList
+---------------------------------------------------------------------------------------------------*/
+
+.foodList {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+  margin: 45px 68px 103px 15px;
+}
+.foodList li {
+  width: calc( ( 100% - 40px ) / 4 );
+	background-color: #fff;
+	box-sizing: border-box;
+  position:  relative;
+  border: 1px solid rgb(235,2,118);
+  box-shadow: 13px 9px 10px rgba(0, 0, 0, 0.1);
+}
+.foodList li .hover{
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  font-size: 13px;
+}
+.foodList li .hover p{
+  color: #fff;
+  text-align: center;
+  font-size: 120%;
+  margin: 100% 0 0 0;
+  line-height: 120%;
+  padding: 0 2%;
+}
+.foodList li:hover .hover{
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.foodList li:nth-child(n+5) {
+	margin-top: 120px;
+}
+.foodList li:hover {
+  opacity:1;
+}
+.foodList li .listTitle {
+	color: #fff;
+	font-weight: bold;
+	padding: 1% 8%;
+	height: 82px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: normal;
+    word-break: keep-all;
+}
+.foodList li span {
+  background: linear-gradient(to right, rgb(235,2,118) 0%,rgb(245,151,56) 100%);
+	color: #fff;
+  padding: 2px 14px;
+  line-height: 26px;
+  margin: 4px;
+  display: inline-block;
+}
+
+.new_circle{
+  display: block;
+  width: 51px;
+  height: 60px;
+  padding: 16px 30px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 100px;
+  background: linear-gradient(to right, rgb(235,2,118) 0%,rgb(245,151,56) 100%);
+  position:  relative;
+  position:  absolute;
+  top:-36px;
+  z-index: 1;
+}
+
+.new_circle u{
+  color: #fff;
+  position:  absolute;
+  font-size: 15px;
+  font-weight: normal;
+  top: 20px;
+  left: 15px;
+ 
+}
+ .todokede_date{
+  /* border-bottom: 1px solid rgb(235,2,118); */
+  font-weight: 500;
+  color: #666;
+  text-align: center;
+  margin-top: -7%;
+  font-size: 13px;
+ }
+
+.foodList li .imgArea {
+	text-align: center;
+	padding: 5%;
+  position: relative;
+  height: 200px;
+}
+.foodList li .imgArea img{
+    max-width: 100%;
+    margin-top: 5%;
+    max-height: 90%;
+}
+.foodList li .imgArea .date {
+	font-size: 14px;
+	text-align: right;
+	margin: 10px 15px 0 0;
+	position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: #919492;
+}
+.foodList li .txtBox {
+  padding: 0px 10px 25px;
+  background-color: #fff;
+  border-bottom: 1px solid #d8dcd2;
+  font-weight: bold;
+  color: #919492;
+  margin: -9px 25px 0px 25px;
+  height: 115px;
+}
+/* .foodList li .txtBox p + p {
+	margin-top: 15px;
+} */
+.foodList li .foodName {
+  font-size: 90%;
+  text-align: center;
+	font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.foodList li .itemName {
+	font-size: 66%;
+  font-weight: bold;
+  color: rgb(235,2,118);
+  margin-top: 10%;
+}
+.foodList li .itemTxt {
+  font-size: 106%;
+  font-weight: bold;
+	height: 72px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  margin-top: 5%;
+  line-height: 110%;
+}
+.foodList li .officeName {
+/* margin-top:-30px; */
+text-align: center;
+color: #606E84;
+font-weight: bold;   
+position: absolute;
+/* bottom: -23px; */
+left: 25px;
+margin: 15px 0px -13px 0px;
+text-overflow: ellipsis;
+overflow: hidden;
+-webkit-line-clamp: 1;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+height: 15px;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+/* end  food */
+/* /////////////////////////////////////////////////////////////////// */
+#top .contentsBk {
+  background-color: rgba(246, 246, 246, 0.5); }
+#top .contentsWrap {
+  padding: 30px 0 140px;
+ }
+
+ #top #contentsWrap_bgc {
+  background-color: #E0F7FF;
+  width: 100%;
+  padding: 56px 0 74px 0;
+  margin: -170px 0 0 0;
+ }
+
+  #top .contInner {
+    display: flex;
+    /* width: 1180px; */
+    justify-content: center;
+  }
+  #top .contInner .bnr {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  #top .contInner .bnr li:hover {
+    opacity: .8;
+  }
+  #top .contInner .bnr li .contents {
+    position: relative;
+    width: 515px;
+    height: 210px;
+    box-shadow: 0 12px 9px rgba(0, 0, 0, 0.6);
+    object-fit: cover;
+  }
+  #top .contInner .bnr li .title {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  #top .contInner .bnr li span {
+    font-size: 32px;
+    
+  }
+  #top .contInner .bnr li .show {
+    display: inline-block;
+    padding: 4px 7px 3px;
+    font-size: 12px;
+    border: 1px solid #000;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #top .contInner .bnr li .link {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+  }
+  #top .contInner .bnr li:last-child {
+    margin-bottom: 0; }
+  #top .contInner .bnr li.kinosei {
+    background: url(/img/top/機能性表示.jpg) no-repeat center center/cover;
+  }
+  #top .contInner .bnr li.benchmark {
+    background: url(/img/top/サプリメント市販商品_体重計.jpg) no-repeat center center/cover;
+  }
+  #top .contInner .photo {
+    margin-left: 64px; 
+  }
+  #top .contInner .photo li {
+    margin-bottom: 74px;
+    width: 300px;
+    height: 250px; 
+    text-align: center;
+  }
+  #top .contInner .photo li:hover {
+    opacity: .8;
+  }
+  #top .contInner .photo li:last-child {
+    margin-bottom: 0; }
+  #top .contInner .photo li#kaigai {
+    background: url(/img/top/海外原料.jpg) no-repeat center center/cover;
+  }
+  #top .contInner .photo li#kaigai div {
+    padding-top: 206px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 3px #333;
+  }
+  #top .contInner .photo li#pet {
+    background: url(/img/top/ペット原料バナー用.jpg) no-repeat center center/cover;
+  }
+  #top .contInner .photo li#pet div {
+    padding-top: 210px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #top .contInner li#tenjikai {
+    margin-top: 60px;
+  }
+  #top .contInner .photo li#tenjikai img{
+    box-shadow: 0 12px 9px rgba(0, 0, 0, 0.6);
+    width: 515px;
+    height: 210px;
+    object-fit: cover;
+  }
+
+  .pc-v {
+    display: block;
+  }
+
+  .sp-v {
+    display: none;
+  }
+
+/***************************************************************************************************
+　SP
+****************************************************************************************************/
+@media screen and (max-width: 767px) {
+  .pc-v {
+    display: none;
+  }
+
+  .sp-v {
+    display: block;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .header {
+    /*background: url(/img/top/bg_firstView_sp.jpg) no-repeat center center/cover;*/
+  }
+  .contents{
+    display:flexbox;
+  }
+
+  .searchWrap {
+    position: relative; }
+
+  .firstView .firstViewWrap {
+    padding-bottom: 50px; }
+
+  .checkbox_list {
+    display: block; }
+    .checkbox_list li {
+      width: 100%; }
+
+  .formCategory {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+    .formCategory .checkbox01-parts::before {
+      width: 20px;
+      height: 20px;
+      top: 2px; }
+    .formCategory .checkbox01-input:checked + .checkbox01-parts::after {
+      top: 0px;
+      left: 6px;
+      width: 7px;
+      height: 12px; }
+
+  .menuOverlay {
+    display: none !important; }
+
+  .mainCont {
+    width: 100%;
+    margin: 35px auto 46px;
+    justify-content: center; }
+    .mainCont .ttl {
+      font-size: 20px; }
+    .mainCont .img {
+      display: none; }
+
+  #top .contentsBk {
+    background-color: transparent; }
+  #top .contentsWrap {
+    /*padding: 46px 0 140px;*/
+    padding: 0 0 140px; }
+  #top .contInner {
+    display: block;
+    width: 100%; 
+    margin: 0 auto;
+  }
+
+  #top .contInner .bnr {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+  #top .contInner .bnr li {
+    margin: 0; 
+  }
+  #top .contInner .bnr{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #top .contInner .bnr li img {
+    width: 100%; 
+  }
+  #top .contInner .bnr li .contents {
+    width: 100%;
+    height: 280px;
+  }
+  #top .contInner .bnr li .title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  #top .contInner .photo {
+    margin: 0 auto;
+  }
+
+  #top .contInner .photo li {
+    text-align: center;
+    margin: 50px auto; 
+  }
+    
+  #top .contInner .photo li#tenjikai img{
+    width: 100%;
+    height: 285px;
+    margin-bottom: 50px;
+  }
+  .hover{
+    display: none;
+  }
+
+}
+
+/***************************************************************************************************
+　end SP
+****************************************************************************************************/
+
+.other-hx {
+  background-color: #f7f7f1;
+  padding: 40px;
+  font-size: 24px;
+  text-align: center;
+  color: #717171;
+  margin: 30px 0 10px;
+  font-weight: bold;
+}
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.sub-contents_text{
+  margin: 20px auto;
+    border: 1px solid #dadada;
+    padding: 43px;
+    width: 100%;
+    font-family: Helvetica,"游ゴシック","Yu Gothic",sans-serif;
+    font-size: 19px;
+}
+
+.privacy{
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.sub-contents3 {
+  border: none;
+  margin-bottom: 30px;
+  padding: 40px 0;
+}
+.company-tbl {
+  width: 88%;
+  margin: 0 auto;
+  font-size: 16px;
+  border-collapse: separate;
+  border-spacing: 7px;
+  display: table;
+}
+.company-tbl th {
+  background-color: #e4e4dd;
+  padding: 20px 20px 20px 65px;
+  text-align: left;
+  width: 200px;
+  color: #717171;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.company-tbl td {
+  padding: 20px 20px 20px 65px;
+  border-bottom: 1px solid #eee;
+}
+.company-tbl a {
+  color: #08c;
+}
+.company-tbl a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .company-tbl {
+    width: 100%;
+  }
+  .company-tbl th {
+    width: 100%;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  .company-tbl td, .company-tbl th {
+    padding: 10px;
+    display: block;
+    border: none;
+  }
+  .back.sp {
+    visibility: hidden;
+  }
+  .mainCont {
+    width: 100%;
+    margin: 0 0 30px;
+    justify-content: center;
+    height: auto;
+  }
+  h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+  .firstView .filter {
+    display: none;
+  }
+  .firstView .background {
+    /* -webkit-filter: blur(10px);
+    filter: blur(10px); */
+  }
+  #top .contInner .bnr li.kinosei {
+    margin-top: 0;
+  }
+  #top .whiteline {
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+  }
+}
+
+/***************************************************************************************************
+  top material @media css
+****************************************************************************************************/
+
+@media screen and (max-width: 767px) {
+
+  /***************************************************************************************************
+  ã€€material
+  ****************************************************************************************************/
+  
+    #top .contents {
+      background: #fff;
+    }
+
+
+  /* contents
+  ===================================================================================================*/
+
+    #top .contentsWrap {
+      padding: 0px 20px 0px;
+    }
+
+  /* sec
+  ---------------------------------------------------------------------------------------------------*/
+
+    #top .sec {
+      padding: 0;
+      margin-top: 25px;
+    }
+
+  /* lead
+  ---------------------------------------------------------------------------------------------------*/
+
+    #top .sec .lead {
+      margin: 0 auto 40px;
+    }
+    #top .sec .lead h1 {
+      font-size: 18px;
+      height: 0px;
+      text-align: center;
+      margin-left: -15px;
+    }
+
+  /* materialList
+  ---------------------------------------------------------------------------------------------------*/
+    .materialList {
+      margin: 0 0 100px;
+    }
+
+    #top .materialList li {
+      width: 100%;
+      box-shadow: -7px 20px 12px 15px rgba(0, 0, 0, 0.1);
+      margin: 0px 0px 62px 0px!important;
+    }
+    #top .materialList {
+      margin: 0px 0 60px;
+    }
+    #top .materialList li:first-child {
+      margin: 0;
+    }
+    #top .materialList li:nth-child(n+2) {
+      margin: 40px 0 0;
+    }
+    #top .materialList li .productInfo{
+      height: 90%;
+    } 
+    #top .materialList li .productName2 {
+      height: 17%;
+      font-size: 149%;
+      width: 104%;
+    }
+    #top .materialList li:nth-child(n+8) {
+      display: none;
+    }
+    #top .materialList li .company {
+      height: 25%;
+      font-size: 103%;
+      line-height: initial;
+    }
+    #top .materialList li .productName1{
+      font-size: 67%;
+    }
+    #top .materialList li .description {
+      padding: 5% 2% 5% 3%;
+      width: 107%;
+      font-size: 86%;
+    }
+    #top .materialList li .certificationMark{
+      min-height: 9%;
+    }
+  
+/***************************************************************************************************
+　END             top material @media css
+****************************************************************************************************/
+
+
+
+/***************************************************************************************************
+　           top food @media css
+****************************************************************************************************/
+
+@media screen and (max-width: 767px) {
+  /* main
+  ===================================================================================================*/
+    #top .contentsBk {
+      /* padding: 40px 20px 100px; */
+      display: flex;
+      flex-flow:column nowrap;
+    }
+
+    .order_materialList{
+      order:1;
+    }
+
+    .order_foodList{
+      order:2;
+    }
+    
+    .order_bnr{
+      order:3;
+      margin: 0;
+      width: 100%;
+    }
+
+    #top .lead h1,
+    #top .lead h2 {
+      padding: 0 0 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #top #contentsWrap_bgc {
+      background-color: #fff;
+      /* margin: 0;
+      width: 100%; */
+    }
+    
+  /* foodList
+  ---------------------------------------------------------------------------------------------------*/
+    .foodList {
+      display: block;
+      margin: 85px 0px 0px 0px;
+    }
+    .foodList li {
+      border: 1px solid rgb(235,2,118);
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      margin: 0 0 35% 0;
+    }
+    .foodList li .itemName {
+      font-size: 13px;
+      margin: 0% 0 5% 0%;
+    }
+    .foodList li .foodName {
+      height: 24px;
+      font-size: 19px;
+      margin: 7px 0px;
+    }
+    .foodList li .imgArea img {
+      max-height: 222px;
+    }
+    .foodList li .imgArea {
+      height: 268px;
+    }
+    .foodList li:nth-child(n+6) {
+      display: none;
+    }
+    .foodList li .itemTxt {
+      margin-top: -6%;
+    }
+    .new_circle u {
+      top:13px;
+    }
+    .foodList li .officeName {
+      font-size: 115%;
+      height: 5%;
+    }
+    .contentsWrap .submit{
+      /* margin: -23px 0px 0px 63px; */
+      width: 200px;
+    }
+    #top #contentsWrap_bgc {
+      margin:18% 0 0 0;
+    }
+    .contentsWrap .submit a {
+      font-size: 14px;
+    }
+    .contentsWrap .submit p {
+      padding: 0px;
+    }
+    .todokede_date {
+      font-size: 110%;
+      line-height: inherit;
+    }
+  }
+/***************************************************************************************************
+　END             top food @media css
+****************************************************************************************************/
+
+/***************************************************************************************************
+　プライバシーポリシー privacypolicy  ※利用規約termsでも使用しています
+****************************************************************************************************/
+.sub-contents_text {
+  border: none;
+  margin-bottom: 30px;
+  padding: 40px 40px;
+  text-align: left;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+.date{
+  text-align: right;
+  border: none;
+  margin-bottom: 30px;
+  padding: 0 170px 0 0;
+  letter-spacing: 2px;
+}
+p {
+   line-height: 30px;
+   }
+a{
+  color: #08c;
+}
+a:hover{
+  text-decoration: underline;
+}
+span{
+  font-weight: bold;
+  font-size: 18px;
+
+}
+@media screen and (max-width: 767px) {
+  .date{
+    text-align: right;
+    padding: 0 0 0 170px;
+  }
+}
+/***************************************************************************************************
+　end プライバシーポリシー privacypolicy
+****************************************************************************************************/
+
+/***************************************************************************************************
+ サイトマップ sitemap toppage改修時にtop.css編集した際に何かの影響でcss反映されなくなったので、sitenap.css作った
+****************************************************************************************************/
+/* dt.st-heading{
+  font-size: 18px;
+  color: #717171;
+  border-bottom: 1px solid #dadada;
+  margin: 0 0 10px 0;
+  width: 70%;
+}
+dl{
+  margin-bottom: 50px;
+}
+
+dd a{
+  line-height: 1.4;
+  color:#333;
+  font-weight: 500;
+  margin-left: 30px;
+}
+.sub-contents4{
+  height: 500px;
+  margin: 80px 0;
+  border: 1px solid #dadada;
+  padding: 50px 0 0 40px;
+}
+
+.left,.right{
+  display:inline-block;
+  height: 500px;
+  width: 400px;
+  text-align: left;
+  float: left;
+ 
+}
+
+@media screen and (max-width: 767px) {
+  .sub-contents4{
+  width: 100%;  
+  height: 200px;
+  margin-top: 10px;
+  display:inline-block;
+  border: none;
+  padding: 10px;
+  }
+  .left,.right{
+    width: 100%;
+    height:200px;
+    float:none;
+  }
+  dt.heading{
+    width: 100%;
+    margin: 40px 0 20px 0;
+  }
+
+} */
+
+/***************************************************************************************************
+ 　end サイトマップ sitemap
+****************************************************************************************************/

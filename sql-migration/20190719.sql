@@ -1,0 +1,5 @@
+ALTER TABLE `m400_genryo`
+	AUTO_INCREMENT=1000000,
+	CHANGE COLUMN `genryo_id` `genryo_id` BIGINT(20) NOT NULL AUTO_INCREMENT FIRST;
+
+DELETE FROM `balbal_db`.`m005_code` WHERE  `code_id`='SEIBUN';

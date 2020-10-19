@@ -1,0 +1,220 @@
+
+/***************************************************************************************************
+　PC
+****************************************************************************************************/
+
+/* header
+===================================================================================================*/
+
+#search .header {
+	background: url(/img/material/genryou.jpg) no-repeat center center / cover;
+}
+
+
+
+/* contents
+===================================================================================================*/
+
+#search .contentsWrap {
+	padding: 140px 0 140px;
+}
+
+/* searchSyllabaryTabs
+---------------------------------------------------------------------------------------------------*/
+
+#search .searchSyllabaryTabs {
+	padding: 0 100px 0;
+}
+
+#search .searchSyllabaryTabs ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0 13px;
+	border-bottom: 1px solid #7d7d7d;
+}
+#search .searchSyllabaryTabs ul li {
+	width: calc( (100% - 80px ) / 10);
+	margin: 0 0 -1px;
+	border: 1px solid #7d7d7d;
+	border-radius: 4px 4px 0 0;
+}
+#search .searchSyllabaryTabs ul li a {
+	display: block;
+	width: 100%;
+	padding: 10px 0 10px;
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+#search .searchSyllabaryTabs ul li.active {
+	border-bottom: 1px solid #fff;
+}
+#search .searchSyllabaryTabs ul li:hover {
+	border-bottom: 1px solid #fff;
+}
+
+/* searchSyllabaryLinks
+---------------------------------------------------------------------------------------------------*/
+
+#search .searchSyllabaryLinks {
+	margin: 70px auto 30px;
+}
+#search .searchSyllabaryLinks ul {
+	display: flex;
+	justify-content: space-between;
+	max-width: 230px;
+	margin: 0 auto;
+}
+#search .searchSyllabaryLinks ul li {
+	width: calc( (100% - 30px ) / 5);
+	border-radius: 4px;
+	box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+}
+#search .searchSyllabaryLinks ul li a {
+	display: block;
+	width: 100%;
+	padding: 10px 0 10px;
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 4px;
+	transition: all .5s;
+}
+#search .searchSyllabaryLinks ul li a:hover {
+	background: #b6ddfa;
+}
+
+/* sec
+---------------------------------------------------------------------------------------------------*/
+
+#search .sec {
+	padding: 0 100px 100px;
+}
+#search .sec:last-child {
+	padding: 0 100px 0;
+}
+#search .sec .secWrap {
+	margin: 0 auto;
+}
+#search .sec .secWrap h2 {
+	padding: 0 0 10px;
+	font-size: 28px;
+	font-weight: bold;
+	border-bottom: 1px solid #d9d9d9;
+}
+#search .sec .secWrap h2 span {
+	display: block;
+	padding: 0 0 0 6px;
+	border-left: 3px solid #3fa9f5;
+}
+
+/* syllabaryList
+---------------------------------------------------------------------------------------------------*/
+
+#search .syllabaryList li {
+	height: 36px;
+	padding: 10px 10px 10px 170px;
+}
+#search .syllabaryList li:nth-child(even) {
+	background: #f6f6f6;
+}
+#search .syllabaryList li a {
+	font-size: 19px;
+	font-weight: bold;
+}
+#search .syllabaryList li a:hover {
+	opacity: 0.7;
+}
+
+
+
+
+
+/***************************************************************************************************
+　SP
+****************************************************************************************************/
+
+@media screen and (max-width: 767px) {
+
+/* header
+===================================================================================================*/
+
+#search .header {
+	background: url(/img/material/genryou.jpg) no-repeat center center / cover;
+}
+
+
+
+
+/* contents
+===================================================================================================*/
+
+	#search .contentsWrap {
+		padding: 40px 20px 85px;
+	}
+
+/* searchSyllabaryTabs
+---------------------------------------------------------------------------------------------------*/
+
+	#search .searchSyllabaryTabs {
+		margin: 0;
+		padding: 0;
+	}
+	#search .searchSyllabaryTabs ul {
+		padding: 0;
+		border-bottom: none;
+	}
+	#search .searchSyllabaryTabs ul li {
+		width: calc( (100% - 45px ) / 10);
+		border-radius: 4px;
+	}
+	#search .searchSyllabaryTabs ul li.active,
+	#search .searchSyllabaryTabs ul li:hover {
+		border-bottom: 1px solid #7d7d7d;
+	}
+	#search .searchSyllabaryTabs ul li a {
+		padding: 10px 0 9px;
+		font-size: 16px;
+	}
+	#search .searchSyllabaryTabs ul li a:hover {
+		background: #b6ddfa;
+	}
+
+/* searchSyllabaryLinks
+---------------------------------------------------------------------------------------------------*/
+
+	#search .searchSyllabaryLinks {
+		margin: 40px auto 35px;
+	}
+	#search .searchSyllabaryLinks ul li {
+		width: calc( (100% - 40px ) / 5);
+		border: 1px solid #7d7d7d;
+		box-shadow: none;
+	}
+	#search .searchSyllabaryLinks ul li a {
+		padding: 10px 0 10px;
+		font-size: 20px;
+	}
+
+/* sec
+---------------------------------------------------------------------------------------------------*/
+
+	#search .sec {
+		margin: 0;
+		padding: 0 0 40px;
+	}
+	#search .sec:last-child {
+		padding: 0;
+	}
+
+/* syllabaryList
+---------------------------------------------------------------------------------------------------*/
+
+	#search .syllabaryList li {
+		padding: 10px 10px 10px 15px;
+	}
+
+}
